@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int find(int *a,int key,int size)
+int linearSearch(int *a,int key,int size)
 {
 	for(int i=0;i<size;i++){
 		if(a[i]==key)
@@ -16,7 +16,7 @@ int main()
 	int a[] = {1,2,3,4,5,6,7};
 	int key = 3;
 	int size = sizeof(a)/sizeof(int);
-	int ans = find(a,key,size);
+	int ans = linearSearch(a,key,size);
 	cout<<ans<<endl;
 	return 0;
 }

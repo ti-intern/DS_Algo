@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int find(int *a,int key,int size)
+int binarySearch(int *a,int key,int size)
 {
 	int start = 0;
 	int end = size-1;
@@ -26,7 +26,7 @@ int main()
 	int a[] = {1,2,3,4,5,6,7};
 	int key = 3;
 	int size = sizeof(a)/sizeof(int);
-	int ans = find(a,key,size);
+	int ans = binarySearch(a,key,size);
 	cout<<ans<<endl;
 	return 0;
 }
